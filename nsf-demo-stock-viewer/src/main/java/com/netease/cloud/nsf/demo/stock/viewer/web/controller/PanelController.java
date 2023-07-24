@@ -113,7 +113,25 @@ public class PanelController {
     	LogManager.put(UUID.randomUUID().toString(), result);
     	return new HttpResponse(result);
     }
-    
+
+    @GetMapping("/mysql")
+    @ResponseBody
+    public HttpResponse getMiddlewareMysql(HttpServletRequest request) {
+        log.info("/mysql invoked");
+        String result = stockService.getMiddlewareMysql();
+        LogManager.put(UUID.randomUUID().toString(), result);
+        return new HttpResponse(result);
+    }
+
+    @GetMapping("/redis")
+    @ResponseBody
+    public HttpResponse getMiddlewareRedis(HttpServletRequest request) {
+        log.info("/redis/get invoked");
+        String result = stockService.getMiddlewareRedis();
+        LogManager.put(UUID.randomUUID().toString(), result);
+        return new HttpResponse(result);
+    }
+
     @GetMapping("/health")
     @ResponseBody
     public String health() {

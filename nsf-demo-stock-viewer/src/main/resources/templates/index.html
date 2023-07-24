@@ -124,6 +124,9 @@
     <div class="form-group">
         <button id="echo_advisor" type="button" class="btn btn-info btn-sm">echo advisor</button>
         <button id="echo_provider" type="button" class="btn btn-info btn-sm">echo provider</button>
+        <button id="echo_mysql" type="button" class="btn btn-info btn-sm">echo mysql</button>
+        <button id="echo_redis" type="button" class="btn btn-info btn-sm">echo redis</button>
+
     </div>
    
     <div class="form-group">
@@ -327,6 +330,35 @@
         });
     }
 
+
+    var echoMysql = function () {
+
+        var url = dubbo + "/mysql";
+        $.ajax({
+            type: 'GET',
+            url: url,
+            success: function (res) {
+                if (res) {
+                    refreshLog();
+                }
+            }
+        });
+    }
+
+    var echoRedis = function () {
+
+        var url = dubbo + "/redis";
+        $.ajax({
+            type: 'GET',
+            url: url,
+            success: function (res) {
+                if (res) {
+                    refreshLog();
+                }
+            }
+        });
+    }
+
     var init = function () {
         getHotAdvice();
         getStockList(0);
@@ -366,6 +398,13 @@
             echoProvider();
         })
 
+        $('#echo_mysql').click(function () {
+            echoMysql();
+        })
+
+        $('#echo_redis').click(function () {
+            echoRedis();
+        })
         $('#dubbo_switch').change(function() {
             var dubbo_on = $(this).prop('checked'); 
             dubbo = dubbo_on ? "/dubbo" : "";

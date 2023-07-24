@@ -31,6 +31,9 @@ public class StockServiceImpl implements IStockService {
     @Value("${stock_advisor_url}")
     String stockAdvisorUrl;
 
+    @Value("${stock_middleware_url}")
+    String stockMiddlewareUrl;
+
 	// 超时
     @Override
     public List<Stock> getStockList(int delay) throws Exception {
@@ -105,7 +108,26 @@ public class StockServiceImpl implements IStockService {
     	return sBuilder.toString();
     }
 
+    @Override
+    public String getMiddlewareMysql() {
+        final String uri = stockMiddlewareUrl + "/users";
+        String res = restTemplate.getForObject(uri,String.class);
+        return "middleware result: " + res;
+    }
 
+    @Override
+    public String getMiddlewareRedis() {
+        final String uri = stockMiddlewareUrl + "redis/get";
+        String res = restTemplate.getForObject(uri,String.class);
+        return "middleware result: " + res;
+    }
+    @Override
+    public String setMiddlewareRedis() {
+        final String uri = stockMiddlewareUrl + "redis/set/bbb";
+        String res = restTemplate.getForObject(uri,String.class);
+        return "middleware result: " + res;
+    }
+    
 	@Override
 	public String deepInvoke(int times) {
 		if(times --> 0) {

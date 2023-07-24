@@ -16,6 +16,12 @@ public interface IStockService {
 	String echoAdvisor();
 	
 	String echoProvider();
+
+	String getMiddlewareMysql();
+
+	String getMiddlewareRedis();
+
+	String setMiddlewareRedis();
 	
 	String deepInvoke(int times);
 }

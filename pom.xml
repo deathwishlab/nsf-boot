@@ -18,7 +18,8 @@
 		<module>nsf-demo-stock-provider</module>
 		<module>nsf-demo-stock-viewer</module>
 		<module>nsf-demo-stock-advisor</module>
-	</modules>
+        <module>nsf-demo-stock-middleware</module>
+    </modules>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
