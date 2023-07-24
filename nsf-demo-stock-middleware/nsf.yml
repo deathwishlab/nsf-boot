@@ -1,0 +1,15 @@
+nsf:
+  type: http
+  nsfServer: 'http://nsf-server.qz.sf.163.com'
+  application:
+    name: ycg-demo-middleware
+    version: 0.0.1
+    projectCode: poc
+    envCode: prod
+    mark: ""
+    group: default
+    tags: []
+  manager:
+    patterns:
+      -
+        className: "com.netease.cloud.nsf.*"
