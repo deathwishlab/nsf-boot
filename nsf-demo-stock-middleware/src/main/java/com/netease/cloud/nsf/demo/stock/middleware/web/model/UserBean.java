@@ -1,4 +1,4 @@
-package com.netease.cloud.nsf.demo.stock.middleware.model;
+package com.netease.cloud.nsf.demo.stock.middleware.web.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

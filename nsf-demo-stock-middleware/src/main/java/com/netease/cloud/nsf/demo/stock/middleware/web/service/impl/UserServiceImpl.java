@@ -1,9 +1,9 @@
-package com.netease.cloud.nsf.demo.stock.middleware.service.impl;
+package com.netease.cloud.nsf.demo.stock.middleware.web.service.impl;
 
 
-import com.netease.cloud.nsf.demo.stock.middleware.dao.UserRepository;
-import com.netease.cloud.nsf.demo.stock.middleware.model.UserBean;
-import com.netease.cloud.nsf.demo.stock.middleware.service.UserService;
+import com.netease.cloud.nsf.demo.stock.middleware.web.dao.UserRepository;
+import com.netease.cloud.nsf.demo.stock.middleware.web.model.UserBean;
+import com.netease.cloud.nsf.demo.stock.middleware.web.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

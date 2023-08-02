@@ -1,14 +1,14 @@
-package com.netease.cloud.nsf.demo.stock.middleware.controller;
+package com.netease.cloud.nsf.demo.stock.middleware.web.controller;
 
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
-@Controller
+@RestController
 public class RedisTestController {
 
     @Resource
