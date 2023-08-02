@@ -117,13 +117,13 @@ public class StockServiceImpl implements IStockService {
 
     @Override
     public String getMiddlewareRedis() {
-        final String uri = stockMiddlewareUrl + "redis/get";
+        final String uri = stockMiddlewareUrl + "/redis/get";
         String res = restTemplate.getForObject(uri,String.class);
         return "middleware result: " + res;
     }
     @Override
     public String setMiddlewareRedis() {
-        final String uri = stockMiddlewareUrl + "redis/set/bbb";
+        final String uri = stockMiddlewareUrl + "/redis/set/bbb";
         String res = restTemplate.getForObject(uri,String.class);
         return "middleware result: " + res;
     }
