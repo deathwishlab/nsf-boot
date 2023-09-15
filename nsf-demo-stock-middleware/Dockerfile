@@ -6,10 +6,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 #add application jar
 ADD ./nsf-demo-stock-middleware/target/*.jar /opt/nsf/
 
-#add nsf agent jar and config file
-RUN mkdir -p /opt/nsf && cd /opt/nsf && \
-    wget "http://console.qz.sf.163.com/download/nsf/nsf-boot.jar" -O nsf-agent.jar
-ADD ./nsf-demo-stock-middleware/nsf.yml /opt/nsf/nsf.yml
+
 
 #add apm agent jar and config file
 #add apm agent jar and config file
