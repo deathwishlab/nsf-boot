@@ -1,0 +1,251 @@
+21:43:03.050 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Starting StockProviderApplication on MacBook-Pro-3.local with PID 7280 (/Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot/nsf-demo-stock-provider/target/classes started by yangchenggang in /Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot)
+21:43:03.068 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - No active profile set, falling back to default profiles: default
+21:43:04.773 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+21:43:04.790 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+21:43:04.791 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:43:04.791 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+21:43:04.983 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:43:04.984 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1779 ms
+21:43:05.459 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:43:05.829 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+21:43:05.877 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+21:43:05.883 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Started StockProviderApplication in 3.514 seconds (JVM running for 4.426)
+21:43:09.267 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:43:09.268 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21:43:09.283 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+21:43:12.622 [http-nio-8080-exec-1] INFO  c.n.c.n.d.s.p.w.c.StockController - health success001
+21:43:12.619 [http-nio-8080-exec-3] INFO  c.n.c.n.d.s.p.w.c.StockController - health success001
+21:43:12.653 [http-nio-8080-exec-2] INFO  c.n.c.n.d.s.p.w.c.StockController - health success001
+21:43:38.845 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+21:43:42.978 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Starting StockProviderApplication on MacBook-Pro-3.local with PID 7318 (/Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot/nsf-demo-stock-provider/target/classes started by yangchenggang in /Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot)
+21:43:42.983 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - No active profile set, falling back to default profiles: default
+21:43:44.768 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+21:43:44.777 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+21:43:44.777 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:43:44.778 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+21:43:44.861 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:43:44.862 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1762 ms
+21:43:45.355 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:43:45.675 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+21:43:45.715 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+21:43:45.720 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Started StockProviderApplication in 3.43 seconds (JVM running for 4.283)
+21:43:46.269 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:43:46.270 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21:43:46.309 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 39 ms
+21:43:46.432 [http-nio-8080-exec-1] INFO  c.n.c.n.d.s.p.w.c.StockController - health success001
+21:43:48.834 [http-nio-8080-exec-2] INFO  c.n.c.n.d.s.p.w.c.StockController - health success001
+21:44:59.091 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+21:45:03.366 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [layout] of type [org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout] java.lang.ClassNotFoundException: org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:26 - no applicable action for [Pattern], current ElementPath  is [[configuration][appender][encoder][layout][Pattern]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.netease.cloud.nsf.demo.stock.provider.StockProviderApplication.main(StockProviderApplication.java:13)
+21:47:44.571 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [layout] of type [org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout] java.lang.ClassNotFoundException: org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:26 - no applicable action for [Pattern], current ElementPath  is [[configuration][appender][encoder][layout][Pattern]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.netease.cloud.nsf.demo.stock.provider.StockProviderApplication.main(StockProviderApplication.java:13)
+21:53:11.295 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [layout] of type [org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout] java.lang.ClassNotFoundException: org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:26 - no applicable action for [Pattern], current ElementPath  is [[configuration][appender][encoder][layout][Pattern]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.netease.cloud.nsf.demo.stock.provider.StockProviderApplication.main(StockProviderApplication.java:13)
+21:54:09.902 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [layout] of type [org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout] java.lang.ClassNotFoundException: org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:26 - no applicable action for [Pattern], current ElementPath  is [[configuration][appender][encoder][layout][Pattern]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.netease.cloud.nsf.demo.stock.provider.StockProviderApplication.main(StockProviderApplication.java:13)
+21:58:42.712 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Starting StockProviderApplication on MacBook-Pro-3.local with PID 7772 (/Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot/nsf-demo-stock-provider/target/classes started by yangchenggang in /Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot)
+21:58:42.718 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - No active profile set, falling back to default profiles: default
+21:58:44.356 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+21:58:44.365 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+21:58:44.366 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:58:44.366 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+21:58:44.449 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:58:44.449 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1587 ms
+21:58:44.888 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:58:45.146 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+21:58:45.174 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+21:58:45.177 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Started StockProviderApplication in 3.217 seconds (JVM running for 4.098)
+21:58:56.115 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:58:56.116 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21:58:56.136 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+21:58:59.242 [http-nio-8080-exec-1] INFO  c.n.c.n.d.s.p.w.c.StockController - health success001
+21:59:11.968 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+22:26:54.319 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Starting StockProviderApplication on MacBook-Pro-3.local with PID 8660 (/Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot/nsf-demo-stock-provider/target/classes started by yangchenggang in /Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot)
+22:26:54.324 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - No active profile set, falling back to default profiles: default
+22:26:55.942 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:26:55.952 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:26:55.952 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:26:55.952 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+22:26:56.032 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:26:56.033 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1523 ms
+22:26:56.442 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:26:56.759 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:26:56.781 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:26:56.784 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Started StockProviderApplication in 3.201 seconds (JVM running for 3.986)
+22:27:44.318 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+22:32:47.789 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Starting StockProviderApplication on MacBook-Pro-3.local with PID 8936 (/Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot/nsf-demo-stock-provider/target/classes started by yangchenggang in /Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot)
+22:32:47.794 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - No active profile set, falling back to default profiles: default
+22:32:49.366 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:32:49.376 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:32:49.377 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:32:49.377 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+22:32:49.464 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:32:49.464 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1561 ms
+22:32:49.808 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:32:50.129 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:32:50.152 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:32:50.155 [main] INFO  c.n.c.n.d.s.p.StockProviderApplication - Started StockProviderApplication in 2.988 seconds (JVM running for 3.671)
+22:33:52.517 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+22:40:26.849 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Starting StockViewerApplication on MacBook-Pro-3.local with PID 9296 (/Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot/nsf-demo-stock-viewer/target/classes started by yangchenggang in /Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot)
+22:40:26.854 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - No active profile set, falling back to default profiles: default
+22:40:28.539 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:40:28.549 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:40:28.550 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:40:28.550 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+22:40:28.638 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:40:28.638 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1541 ms
+22:40:29.415 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:40:29.642 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22:40:29.807 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:40:29.838 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:40:29.843 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Started StockViewerApplication in 3.698 seconds (JVM running for 4.457)
+22:40:34.005 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+22:41:14.017 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [layout] of type [org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout] java.lang.ClassNotFoundException: org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:26 - no applicable action for [Pattern], current ElementPath  is [[configuration][appender][encoder][layout][Pattern]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.netease.cloud.nsf.demo.stock.advisor.StockAdvisorApplication.main(StockAdvisorApplication.java:13)
+22:43:15.889 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [layout] of type [org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout] java.lang.ClassNotFoundException: org.apache.skywalking.apm.toolkit.log.logback.v1.x.TraceIdPatternLogbackLayout
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:26 - no applicable action for [Pattern], current ElementPath  is [[configuration][appender][encoder][layout][Pattern]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:222)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:118)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:288)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.netease.cloud.nsf.demo.stock.advisor.StockAdvisorApplication.main(StockAdvisorApplication.java:13)
+22:43:56.468 [main] INFO  c.n.c.n.d.s.a.StockAdvisorApplication - Starting StockAdvisorApplication on MacBook-Pro-3.local with PID 9563 (/Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot/nsf-demo-stock-advisor/target/classes started by yangchenggang in /Users/yangchenggang/Desktop/207yanshi/git-demo/nsf-sample-boot)
+22:43:56.471 [main] INFO  c.n.c.n.d.s.a.StockAdvisorApplication - No active profile set, falling back to default profiles: default
+22:43:57.952 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:43:57.961 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:43:57.962 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:43:57.962 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+22:43:58.047 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:43:58.047 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1394 ms
+22:43:58.388 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:43:58.718 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:43:58.746 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:43:58.750 [main] INFO  c.n.c.n.d.s.a.StockAdvisorApplication - Started StockAdvisorApplication in 3.05 seconds (JVM running for 3.789)
+22:44:02.716 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

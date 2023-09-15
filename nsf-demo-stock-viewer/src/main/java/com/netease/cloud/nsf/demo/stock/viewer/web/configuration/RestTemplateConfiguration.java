@@ -29,12 +29,12 @@ public class RestTemplateConfiguration {
 	@Autowired
 	RestTemplate restTemplate;
 
-	@PostConstruct
+	/*@PostConstruct
 	public void restTemplateInterceptors() {
 		List<ClientHttpRequestInterceptor> interceptors = restTemplate.getInterceptors();
 		if(!interceptors.contains(traceHttpInterceptor)) {
 			interceptors.add(traceHttpInterceptor);
 			restTemplate.setInterceptors(interceptors);
 		}
-	}
+	}*/
 }

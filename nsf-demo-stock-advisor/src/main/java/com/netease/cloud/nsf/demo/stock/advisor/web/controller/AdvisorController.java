@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +16,9 @@ import com.netease.cloud.nsf.demo.stock.advisor.web.service.IAdvisorService;
 
 @RestController
 public class AdvisorController {
+
+	private static Logger log = LoggerFactory.getLogger(AdvisorController.class);
+
 
 	@Autowired
 	IAdvisorService advisorService;
@@ -43,6 +48,7 @@ public class AdvisorController {
 	@GetMapping("/health")
 	@ResponseBody
 	public String health() {
+		log.info("advisor aaaa");
 		return "I am good!";
 	}
 	

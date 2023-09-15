@@ -13,12 +13,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-logging</artifactId>
-				</exclusion>
-			</exclusions>
+
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,10 +37,9 @@
 
 		<dependency>
 			<groupId>org.apache.skywalking</groupId>
-			<artifactId>apm-toolkit-log4j-1.x</artifactId>
+			<artifactId>apm-toolkit-logback-1.x</artifactId>
 			<version>8.0.0</version>
 		</dependency>
-
 
 	</dependencies>
 

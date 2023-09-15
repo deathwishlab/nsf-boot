@@ -31,6 +31,7 @@ public class PanelController {
 
     private static Logger log = LoggerFactory.getLogger(PanelController.class);
 
+
     @Autowired
     IStockService stockService;
 
@@ -135,7 +136,8 @@ public class PanelController {
     @GetMapping("/health")
     @ResponseBody
     public String health() {
-    	return "I am good!";
+        log.info("health health", "");
+        return "I am good! aa01";
     }
     
     @RequestMapping("/deepInvoke")

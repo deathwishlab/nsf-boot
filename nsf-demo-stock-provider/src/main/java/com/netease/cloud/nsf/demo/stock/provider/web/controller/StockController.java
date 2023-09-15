@@ -23,6 +23,7 @@ import java.util.List;
 @RestController
 public class StockController {
 
+
 	private static Logger log = LoggerFactory.getLogger(StockController.class);
 
 	@Autowired
@@ -78,6 +79,7 @@ public class StockController {
 	@GetMapping("/health")
 	@ResponseBody
 	public String health() {
+		log.info("health success001", "");
 		return "I am good!";
 	}
 }
