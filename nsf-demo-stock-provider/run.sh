@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-java $JAVA_OPTS -javaagent:/opt/apm/skywalking-napm-bin-8.10.0-latest/agent/skywalking-agent.jar -Dskywalking_config=/opt/apm/skywalking-napm-bin-8.10.0-latest/agent/config/agent.config -jar /opt/nsf/nsf-demo-stock-provider-1.0-SNAPSHOT.jar
+java $JAVA_OPTS -jar /opt/nsf/nsf-demo-stock-provider-1.0-SNAPSHOT.jar
