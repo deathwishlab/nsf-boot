@@ -1,7 +1,0 @@
-com\netease\cloud\nsf\demo\stock\advisor\StockAdvisorApplication.class
-com\netease\cloud\nsf\demo\stock\advisor\web\service\IAdvisorService.class
-com\netease\cloud\nsf\demo\stock\advisor\web\service\impl\AdvisorServiceImpl.class
-com\netease\cloud\nsf\demo\stock\advisor\web\entity\Stock.class
-com\netease\cloud\nsf\demo\stock\advisor\web\util\StringKit.class
-com\netease\cloud\nsf\demo\stock\advisor\web\util\CastKit.class
-com\netease\cloud\nsf\demo\stock\advisor\web\controller\AdvisorController.class

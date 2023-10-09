@@ -1,8 +1,0 @@
-com\netease\cloud\nsf\demo\stock\middleware\web\controller\RedisTestController.class
-com\netease\cloud\nsf\demo\stock\middleware\web\dao\UserRepository.class
-com\netease\cloud\nsf\demo\stock\middleware\StockMiddlewareApplication.class
-com\netease\cloud\nsf\demo\stock\middleware\web\controller\HealthController.class
-com\netease\cloud\nsf\demo\stock\middleware\web\model\UserBean.class
-com\netease\cloud\nsf\demo\stock\middleware\web\controller\UserController.class
-com\netease\cloud\nsf\demo\stock\middleware\web\service\impl\UserServiceImpl.class
-com\netease\cloud\nsf\demo\stock\middleware\web\service\UserService.class
