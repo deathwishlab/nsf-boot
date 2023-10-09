@@ -50,7 +50,7 @@ public class StockController {
 	@Value("${spring.application.name}")
 	String name;
 
-	@Value("${nsf.application.version:1.0.0}")
+	@Value("${nsf.application.version:2.0.0}")
 	String version;
 
 	@GetMapping("/hi")
