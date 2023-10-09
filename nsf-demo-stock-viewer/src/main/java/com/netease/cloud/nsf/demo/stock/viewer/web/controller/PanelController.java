@@ -136,8 +136,8 @@ public class PanelController {
     @GetMapping("/health")
     @ResponseBody
     public String health() {
-        log.info("health health", "");
-        return "I am good! aa01";
+        log.info("viewer health", "");
+        return "I am good! viewer-health";
     }
     
     @RequestMapping("/deepInvoke")

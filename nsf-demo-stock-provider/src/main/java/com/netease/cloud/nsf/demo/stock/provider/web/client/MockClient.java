@@ -1,23 +1,24 @@
 package com.netease.cloud.nsf.demo.stock.provider.web.client;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.ResourceUtils;
+import org.springframework.util.StreamUtils;
 
 import com.netease.cloud.nsf.demo.stock.provider.web.entity.Stock;
 import com.netease.cloud.nsf.demo.stock.provider.web.util.CastKit;
 import com.netease.cloud.nsf.demo.stock.provider.web.util.StringKit;
-import org.springframework.util.StreamUtils;
 
 public class MockClient implements StockClient, InitializingBean {
 
@@ -49,15 +50,17 @@ public class MockClient implements StockClient, InitializingBean {
 	@Override
 	public void afterPropertiesSet() throws Exception {
 
-		Resource resource = resourceLoader.getResource("classpath:stock_data.json");;
+		Resource resource = resourceLoader.getResource("classpath:stock_data.json");
 		InputStream jsonStream = resource.getInputStream();
 		String stockStr = StreamUtils.copyToString(jsonStream, Charset.forName("UTF-8"));
+
 		List<Stock> stocks = CastKit.str2StockList(stockStr);
 		if(!CollectionUtils.isEmpty(stocks)) {
 			stocks.forEach(s -> {
 				stockMap.put(s.getId().toLowerCase(), s);
 			});
 		}
+
 	}
 
 }

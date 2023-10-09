@@ -1,0 +1,261 @@
+09:52:30.255 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Starting StockViewerApplication v1.0-SNAPSHOT on HIH-L-6058 with PID 10004 (D:\programdata\nsf-boot\nsf-demo-stock-viewer\target\nsf-demo-stock-viewer-1.0-SNAPSHOT.jar started by hzdengwei1 in D:\programdata\nsf-boot\nsf-demo-stock-viewer)
+09:52:30.265 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - No active profile set, falling back to default profiles: default
+09:52:34.796 [main] INFO  c.c.f.f.i.p.DefaultApplicationProvider - App ID is set to prod.poc.test-vv by app.id property from System Property
+09:52:34.806 [main] INFO  c.c.f.f.i.p.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+09:52:36.625 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:52:36.653 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:52:36.653 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:52:36.654 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09:52:37.356 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:52:37.356 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6885 ms
+09:52:38.249 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09:52:38.513 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+09:52:38.757 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:52:38.836 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:52:38.845 [main] WARN  c.n.c.n.a.e.t.s.SpringWebApplicationContextAdvice - ConfigurableWebApplicationContextAdvice  end*********************************
+09:52:38.848 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Started StockViewerApplication in 11.566 seconds (JVM running for 75.068)
+09:53:04.841 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:53:04.842 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:53:04.858 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+09:53:05.000 [http-nio-8080-exec-1] INFO  c.n.c.n.d.s.v.w.c.PanelController - viewer health
+09:53:10.241 [http-nio-8080-exec-10] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+09:53:10.272 [http-nio-8080-exec-1] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+09:53:19.664 [http-nio-8080-exec-4] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+09:53:19.664 [http-nio-8080-exec-5] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+09:53:20.303 [http-nio-8080-exec-7] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+09:53:20.304 [http-nio-8080-exec-6] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+09:53:20.652 [http-nio-8080-exec-8] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+09:53:20.654 [http-nio-8080-exec-2] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+09:53:31.390 [http-nio-8080-exec-1] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+09:53:31.391 [http-nio-8080-exec-1] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:31.426 [http-nio-8080-exec-1] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:31.564 [http-nio-8080-exec-10] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+09:53:31.565 [http-nio-8080-exec-10] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:40.687 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+09:53:40.687 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:40.688 [http-nio-8080-exec-5] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:40.727 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+09:53:40.728 [http-nio-8080-exec-4] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:41.330 [http-nio-8080-exec-6] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+09:53:41.332 [http-nio-8080-exec-6] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:41.332 [http-nio-8080-exec-6] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:41.359 [http-nio-8080-exec-7] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+09:53:41.359 [http-nio-8080-exec-7] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:41.705 [http-nio-8080-exec-2] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+09:53:41.706 [http-nio-8080-exec-2] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:41.708 [http-nio-8080-exec-2] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:53:41.738 [http-nio-8080-exec-8] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+09:53:41.739 [http-nio-8080-exec-8] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:55:16.592 [SpringContextShutdownHook] INFO  c.n.c.n.a.e.t.s.ContextCloseAdvice - Detect spring application context close.
+09:55:16.595 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+09:57:14.446 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Starting StockViewerApplication v1.0-SNAPSHOT on HIH-L-6058 with PID 24916 (D:\programdata\nsf-boot\nsf-demo-stock-viewer\target\nsf-demo-stock-viewer-1.0-SNAPSHOT.jar started by hzdengwei1 in D:\programdata\nsf-boot\nsf-demo-stock-viewer)
+09:57:14.458 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - No active profile set, falling back to default profiles: default
+09:57:20.230 [main] INFO  c.c.f.f.i.p.DefaultApplicationProvider - App ID is set to prod.poc.test-vv by app.id property from System Property
+09:57:20.247 [main] INFO  c.c.f.f.i.p.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+09:57:22.812 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:57:22.843 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:57:22.844 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:57:22.844 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09:57:23.633 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:57:23.634 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8941 ms
+09:57:24.637 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09:57:24.937 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+09:57:25.224 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:57:25.308 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:57:25.317 [main] WARN  c.n.c.n.a.e.t.s.SpringWebApplicationContextAdvice - ConfigurableWebApplicationContextAdvice  end*********************************
+09:57:25.320 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Started StockViewerApplication in 15.187 seconds (JVM running for 73.318)
+09:57:39.705 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:57:39.707 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:57:39.723 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+09:57:40.786 [http-nio-8080-exec-2] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+09:57:40.839 [http-nio-8080-exec-3] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+09:58:01.963 [http-nio-8080-exec-3] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+09:58:01.964 [http-nio-8080-exec-3] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:01.995 [http-nio-8080-exec-3] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:02.038 [http-nio-8080-exec-2] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+09:58:02.038 [http-nio-8080-exec-2] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:02.191 [http-nio-8080-exec-4] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+09:58:02.191 [http-nio-8080-exec-5] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+09:58:05.141 [http-nio-8080-exec-8] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+09:58:06.288 [http-nio-8080-exec-9] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+09:58:06.558 [http-nio-8080-exec-10] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+09:58:23.238 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+09:58:23.239 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:23.239 [http-nio-8080-exec-5] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:23.279 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+09:58:23.280 [http-nio-8080-exec-4] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:26.204 [http-nio-8080-exec-8] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+09:58:26.204 [http-nio-8080-exec-8] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:27.321 [http-nio-8080-exec-9] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+09:58:27.322 [http-nio-8080-exec-9] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:27.322 [http-nio-8080-exec-9] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:27.605 [http-nio-8080-exec-10] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+09:58:27.606 [http-nio-8080-exec-10] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+09:58:27.606 [http-nio-8080-exec-10] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:01:54.925 [SpringContextShutdownHook] INFO  c.n.c.n.a.e.t.s.ContextCloseAdvice - Detect spring application context close.
+10:01:54.929 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:03:20.017 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Starting StockViewerApplication v1.0-SNAPSHOT on HIH-L-6058 with PID 18224 (D:\programdata\nsf-boot\nsf-demo-stock-viewer\target\nsf-demo-stock-viewer-1.0-SNAPSHOT.jar started by hzdengwei1 in D:\programdata\nsf-boot\nsf-demo-stock-viewer)
+10:03:20.023 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - No active profile set, falling back to default profiles: default
+10:03:23.385 [main] INFO  c.c.f.f.i.p.DefaultApplicationProvider - App ID is set to prod.poc.test-vv by app.id property from System Property
+10:03:23.391 [main] INFO  c.c.f.f.i.p.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+10:03:24.867 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:03:24.890 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:03:24.890 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:03:24.891 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+10:03:25.065 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:03:25.066 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4900 ms
+10:03:25.797 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:03:26.028 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+10:03:26.249 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:03:26.303 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:03:26.310 [main] WARN  c.n.c.n.a.e.t.s.SpringWebApplicationContextAdvice - ConfigurableWebApplicationContextAdvice  end*********************************
+10:03:26.313 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Started StockViewerApplication in 8.761 seconds (JVM running for 35.328)
+10:04:42.274 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:04:42.276 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:04:42.287 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+10:04:43.122 [http-nio-8080-exec-2] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:04:43.164 [http-nio-8080-exec-3] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:05:04.315 [http-nio-8080-exec-3] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:05:04.316 [http-nio-8080-exec-3] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:05:04.337 [http-nio-8080-exec-3] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:05:04.349 [http-nio-8080-exec-2] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:05:04.349 [http-nio-8080-exec-2] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:05:04.467 [http-nio-8080-exec-5] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:05:04.467 [http-nio-8080-exec-4] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:05:05.873 [http-nio-8080-exec-9] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:05:05.874 [http-nio-8080-exec-10] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:05:25.497 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:05:25.498 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:05:25.498 [http-nio-8080-exec-4] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:05:25.522 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:05:25.522 [http-nio-8080-exec-5] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:05:26.906 [http-nio-8080-exec-10] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:05:26.907 [http-nio-8080-exec-10] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:05:26.908 [http-nio-8080-exec-10] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:05:26.928 [http-nio-8080-exec-9] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:05:26.928 [http-nio-8080-exec-9] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:09:31.479 [SpringContextShutdownHook] INFO  c.n.c.n.a.e.t.s.ContextCloseAdvice - Detect spring application context close.
+10:09:31.483 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:10:19.167 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Starting StockViewerApplication v1.0-SNAPSHOT on HIH-L-6058 with PID 968 (D:\programdata\nsf-boot\nsf-demo-stock-viewer\target\nsf-demo-stock-viewer-1.0-SNAPSHOT.jar started by hzdengwei1 in D:\programdata\nsf-boot\nsf-demo-stock-viewer)
+10:10:19.178 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - No active profile set, falling back to default profiles: default
+10:10:23.764 [main] INFO  c.c.f.f.i.p.DefaultApplicationProvider - App ID is set to prod.poc.test-vv by app.id property from System Property
+10:10:23.774 [main] INFO  c.c.f.f.i.p.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+10:10:25.574 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:10:25.609 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:10:25.610 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:10:25.611 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+10:10:25.859 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:10:25.859 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6443 ms
+10:10:26.943 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:10:27.230 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+10:10:27.502 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:10:27.582 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:10:27.590 [main] WARN  c.n.c.n.a.e.t.s.SpringWebApplicationContextAdvice - ConfigurableWebApplicationContextAdvice  end*********************************
+10:10:27.593 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Started StockViewerApplication in 11.379 seconds (JVM running for 47.028)
+10:11:11.573 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:11:11.575 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:11:11.588 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+10:11:12.345 [http-nio-8080-exec-2] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:11:12.385 [http-nio-8080-exec-3] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:11:33.490 [http-nio-8080-exec-3] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:11:33.491 [http-nio-8080-exec-3] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:11:33.536 [http-nio-8080-exec-3] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:11:33.577 [http-nio-8080-exec-2] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:11:33.577 [http-nio-8080-exec-2] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:11:33.725 [http-nio-8080-exec-5] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:11:33.725 [http-nio-8080-exec-4] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:11:49.807 [http-nio-8080-exec-1] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:11:50.822 [http-nio-8080-exec-3] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:11:51.009 [http-nio-8080-exec-2] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:11:54.756 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:11:54.757 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:11:54.757 [http-nio-8080-exec-4] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:11:54.763 [http-nio-8080-exec-7] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:11:54.782 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:11:54.782 [http-nio-8080-exec-5] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:11:54.787 [http-nio-8080-exec-10] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:12:10.857 [http-nio-8080-exec-1] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:12:10.858 [http-nio-8080-exec-1] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:12:11.856 [http-nio-8080-exec-3] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:12:11.856 [http-nio-8080-exec-3] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:12:11.857 [http-nio-8080-exec-3] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:12:12.042 [http-nio-8080-exec-2] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:12:12.043 [http-nio-8080-exec-2] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:12:12.043 [http-nio-8080-exec-2] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:12:15.811 [http-nio-8080-exec-7] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:12:15.811 [http-nio-8080-exec-7] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:12:15.811 [http-nio-8080-exec-7] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:12:15.859 [http-nio-8080-exec-10] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:12:15.859 [http-nio-8080-exec-10] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:13:33.054 [SpringContextShutdownHook] INFO  c.n.c.n.a.e.t.s.ContextCloseAdvice - Detect spring application context close.
+10:13:33.057 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:14:08.715 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Starting StockViewerApplication v1.0-SNAPSHOT on HIH-L-6058 with PID 24752 (D:\programdata\nsf-boot\nsf-demo-stock-viewer\target\nsf-demo-stock-viewer-1.0-SNAPSHOT.jar started by hzdengwei1 in D:\programdata\nsf-boot\nsf-demo-stock-viewer)
+10:14:08.722 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - No active profile set, falling back to default profiles: default
+10:14:12.522 [main] INFO  c.c.f.f.i.p.DefaultApplicationProvider - App ID is set to prod.poc.test-vv by app.id property from System Property
+10:14:12.528 [main] INFO  c.c.f.f.i.p.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+10:14:13.961 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:14:13.979 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:14:13.979 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:14:13.980 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+10:14:14.114 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:14:14.114 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5200 ms
+10:14:14.730 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:14:14.963 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+10:14:15.158 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:14:15.222 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:14:15.232 [main] WARN  c.n.c.n.a.e.t.s.SpringWebApplicationContextAdvice - ConfigurableWebApplicationContextAdvice  end*********************************
+10:14:15.234 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Started StockViewerApplication in 9.649 seconds (JVM running for 39.176)
+10:15:04.798 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:15:04.800 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:15:04.814 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+10:15:05.750 [http-nio-8080-exec-5] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:15:05.812 [http-nio-8080-exec-6] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:15:14.950 [http-nio-8080-exec-1] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:15:14.951 [http-nio-8080-exec-4] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:15:26.950 [http-nio-8080-exec-6] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:15:26.950 [http-nio-8080-exec-6] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:15:26.975 [http-nio-8080-exec-6] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:15:26.980 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:15:26.981 [http-nio-8080-exec-5] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:15:36.010 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:15:36.011 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:15:36.012 [http-nio-8080-exec-4] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:15:36.042 [http-nio-8080-exec-1] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:15:36.042 [http-nio-8080-exec-1] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:16:45.380 [http-nio-8080-exec-4] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:16:45.388 [http-nio-8080-exec-1] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:17:06.445 [http-nio-8080-exec-1] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:17:06.446 [http-nio-8080-exec-1] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:17:06.446 [http-nio-8080-exec-1] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:17:06.447 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:17:06.447 [http-nio-8080-exec-4] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:18:12.785 [SpringContextShutdownHook] INFO  c.n.c.n.a.e.t.s.ContextCloseAdvice - Detect spring application context close.
+10:18:12.788 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:18:56.152 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Starting StockViewerApplication v1.0-SNAPSHOT on HIH-L-6058 with PID 1252 (D:\programdata\nsf-boot\nsf-demo-stock-viewer\target\nsf-demo-stock-viewer-1.0-SNAPSHOT.jar started by hzdengwei1 in D:\programdata\nsf-boot\nsf-demo-stock-viewer)
+10:18:56.156 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - No active profile set, falling back to default profiles: default
+10:18:58.919 [main] INFO  c.c.f.f.i.p.DefaultApplicationProvider - App ID is set to prod.poc.test-vv by app.id property from System Property
+10:18:58.930 [main] INFO  c.c.f.f.i.p.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+10:19:00.453 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:19:00.479 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:19:00.480 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:19:00.480 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+10:19:00.643 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:19:00.643 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4389 ms
+10:19:01.440 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:19:01.655 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+10:19:01.913 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:19:01.954 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:19:01.960 [main] WARN  c.n.c.n.a.e.t.s.SpringWebApplicationContextAdvice - ConfigurableWebApplicationContextAdvice  end*********************************
+10:19:01.963 [main] INFO  c.n.c.n.d.s.v.StockViewerApplication - Started StockViewerApplication in 7.108 seconds (JVM running for 14.409)
+10:20:08.250 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:20:08.250 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:20:08.266 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+10:20:08.939 [http-nio-8080-exec-4] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get hot stock advice ...
+10:20:08.990 [http-nio-8080-exec-5] INFO  c.n.c.n.d.s.v.w.s.i.StockServiceImpl - start to get stock list ...
+10:20:30.102 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - get stock list failed ...
+10:20:30.103 [http-nio-8080-exec-5] WARN  c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:20:30.134 [http-nio-8080-exec-5] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-provider/stocks": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:20:30.146 [http-nio-8080-exec-4] WARN  c.n.c.n.d.s.v.w.c.PanelController - get hot stock advice failed ...
+10:20:30.172 [http-nio-8080-exec-4] ERROR c.n.c.n.d.s.v.w.c.PanelController - I/O error on GET request for "http://pf-advisor/advices/hot": Connection timed out: connect; nested exception is java.net.ConnectException: Connection timed out: connect
+10:27:39.883 [SpringContextShutdownHook] INFO  c.n.c.n.a.e.t.s.ContextCloseAdvice - Detect spring application context close.
+10:27:39.886 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

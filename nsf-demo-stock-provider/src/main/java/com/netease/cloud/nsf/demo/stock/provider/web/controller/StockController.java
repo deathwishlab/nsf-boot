@@ -1,28 +1,27 @@
 package com.netease.cloud.nsf.demo.stock.provider.web.controller;
 
-import com.netease.cloud.nsf.demo.stock.provider.web.entity.Stock;
-import com.netease.cloud.nsf.demo.stock.provider.web.service.IProviderService;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.List;
+import com.netease.cloud.nsf.demo.stock.provider.web.entity.Stock;
+import com.netease.cloud.nsf.demo.stock.provider.web.service.IProviderService;
 
 /**
  * @author Chen Jiahan | chenjiahan@corp.netease.com
  */
 @RestController
 public class StockController {
-
 
 	private static Logger log = LoggerFactory.getLogger(StockController.class);
 
@@ -33,12 +32,10 @@ public class StockController {
 	 * @param stockIds
 	 *            以","分隔 , 单个id也可查询
 	 * @return
-	 * @throws InterruptedException 
 	 */
 	@GetMapping("/stocks/{stockIds}")
-	public List<Stock> getStocksByIds(@PathVariable String stockIds, 
-			@RequestParam(name = "delay", required = false, defaultValue = "0") int delay) throws InterruptedException {
-		Thread.sleep(delay * 1000);
+	public List<Stock> getStocksByIds(@PathVariable String stockIds) {
+
 		log.info("get /stocks/{} success", stockIds);
 		return stockService.getStocksByIds(stockIds);
 	}
@@ -52,6 +49,9 @@ public class StockController {
 
 	@Value("${spring.application.name}")
 	String name;
+
+	@Value("${nsf.application.version:1.0.0}")
+	String version;
 
 	@GetMapping("/hi")
 	public String greeting(HttpServletRequest request) {
@@ -68,18 +68,12 @@ public class StockController {
 		String host = request.getServerName();
 		int port = request.getServerPort();
 
-		return "echo from " + name + "[" + host + ":" + port + "]" + System.lineSeparator();
-	}
-
-	@PostMapping("echoPost")
-	public Object echoPost(@RequestBody Object obj) {
-		return obj;
+		return "echo from " + name + " " + version +"[" + host + ":" + port + "]" + System.lineSeparator();
 	}
 
 	@GetMapping("/health")
 	@ResponseBody
 	public String health() {
-		log.info("health success001", "");
 		return "I am good!";
 	}
 }
