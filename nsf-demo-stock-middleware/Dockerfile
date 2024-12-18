@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM m.daocloud.io/docker.io/openjdk:8
 
 ENV TZ=Asia/Shanghai LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
 
